@@ -12,18 +12,18 @@ Welcome to our **Hotel Management System** website! My easy-to-use platform help
  2. **Bookings:**
  - A table view to show each booking information including guest name and email, selected cabin, dates, status of the booking, prices, actions that can be done and more...
  - When check-in a booking, employees need to accept payment (outside the app) then confirm this payment (inside the app)
- 4. **Authentication:**
+ 3. **Authentication:**
  - Employees can add a new user, with email confirmation.
  - An existing user can edit their information, name, avatar and uploading an image.
  - Users can log-in out of the website.
  - Non-logged-in users can not access the website.
  - Please refer to the website and read the note in login form to understand more about project authentication.
- 5. **Guests:**
+ 4. **Guests:**
  - Employees can add a new guest to the database in order to add a new booking for them.
  - Guest information are: Name, address, nationality and national id. 
- 6. **Settings:**
+ 5. **Settings:**
  - The hotel have settings like minimum and maximum nights per booking, breakfast price and maximum guests per booking. To make sure that no booking is created if it's not compatible with the hotel settings.
- 7. **Dashboard:**
+ 6. **Dashboard:**
 -  Finally, all of this information are displayed in the dashboard (main/home page of the website) in a very nice and attractive way with charts to keep track of all the hotel data.
 - Filter dashboard information by last 7, 30 and 90 days.
 
@@ -66,7 +66,7 @@ I used TailwindCSS instead of styled component to style the website.
 7. **(.env) file**:
 For security purposes, I saved my **Supabase URL** and **API key** inside a **.env** file. so that not everyone can see it. 	
 	
-9. **Responsive**
+8. **Responsive**
 
 ## Tech:
 In this project, I used the following technologies and libraries:
