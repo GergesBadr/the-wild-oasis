@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global */
+@layer base {
+  *:disabled {
+    @apply cursor-not-allowed;
+  }
+
+  /* Prevent any transitions or animations, if that's what's the user want!*/
+  *,
+  *::before,
+  *::after {
+    @apply motion-reduce:animate-none motion-reduce:transition-none motion-reduce:duration-0;
+  }
+
+  input:focus,
+  button:focus,
+  textarea:focus,
+  select:focus,
+  a:focus {
+    @apply outline-2 outline-offset-2 outline-indigo-600;
+  }
+
+  textarea {
+    @apply min-h-[100px] resize-none;
+  }
+
+  .icon-size {
+    @apply h-6 w-6;
+  }
+
+  .sec-text-color {
+    @apply text-gray-500 dark:text-gray-400;
+  }
+
+  ::file-selector-button {
+    @apply cursor-pointer rounded-md border-none bg-indigo-600 px-4 py-2 text-gray-200 duration-300 hover:bg-indigo-700;
+  }
+
+  #activity-list::-webkit-scrollbar {
+    @apply w-2;
+  }
+  #activity-list::-webkit-scrollbar-thumb {
+    @apply rounded-lg bg-indigo-400 dark:bg-indigo-600;
+  }
+
+  /* page loading animation */
+  .page-loading-container > :nth-child(2) {
+    animation-delay: 0.1s;
+  }
+  .page-loading-container > :nth-child(3) {
+    animation-delay: 0.2s;
+  }
+  .page-loading-container > :nth-child(4) {
+    animation-delay: 0.3s;
+  }
+}
+
+@layer components {
+  .heading-1 {
+    @apply text-3xl font-bold md:text-5xl;
+  }
+  .heading-2 {
+    @apply text-2xl font-semibold md:text-3xl;
+  }
+  .heading-3 {
+    @apply text-xl font-medium md:text-2xl;
+  }
+  .common-input {
+    @apply rounded-md border-2 border-gray-300 bg-transparent px-4 py-1 dark:border-gray-700;
+  }
+}
