@@ -83,4 +83,4 @@ In this project, I used the following technologies and libraries:
 - [Recharts](https://recharts.org/en-US)
 
 ## Demo:
-To use the website, go to [The Wild Oasis](https://hotel-of-the-wild-oasis.netlify.app/dashboard)
+To use the website, go to [The Wild Oasis](https://hotel-of-the-wild-oasis.netlify.app)
