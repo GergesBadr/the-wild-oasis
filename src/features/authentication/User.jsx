@@ -8,7 +8,11 @@ function User() {
 
   return (
     <div className="flex items-center gap-2">
-      <img src={userAvatar} alt={`${userName} Profile photo.`} />
+      <img
+        src={userAvatar}
+        alt={`${userName} Profile photo.`}
+        className="w-10 rounded-full"
+      />
       <span> {userName} </span>
     </div>
   );
